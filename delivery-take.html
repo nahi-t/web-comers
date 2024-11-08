@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell Shoes - Ashewa</title>
+    <link rel="stylesheet" href="assets/css/delivary_take.css">
+</head>
+<body>
+    <header>
+        <h1>sell product</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about as.html ">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="delivery.html">dealvery</a>
+            <a href="delivery-take.html">sell product</a>
+        </nav>
+    </header>
+    <section class="sell-form">
+        <h2>Register Your Product</h2>
+        <form onsubmit="submitSellForm(event)">
+            <label for="shoe-image">Shoe Image:</label>
+            <input type="file" id="shoe-image" required>
+            <label for="brand-name">Brand Name:</label>
+            <input type="text" id="brand-name" required>
+            <label for="price">Price:</label>
+            <input type="number" id="price" required>
+            <label for="license">Trade License:</label>
+            <input type="file" id="license" required>
+            <label for="address">Shop Address:</label>
+            <input type="text" id="address" required>
+            <label for="payment-way">Payment Method:</label>
+            <select id="payment-way">
+                <option value="telebirr">Telebirr</option>
+                <option value="mpesa">M-Pesa</option>
+                <option value="cbe">CBE</option>
+                <option value="dashen">Dashen Bank</option>
+            </select>
+            <button type="submit">Submit Product</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Ashewa</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

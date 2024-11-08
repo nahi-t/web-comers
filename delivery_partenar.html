@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Delivery Partner - abesinya</title>
+    <link rel="stylesheet" href="assets/css/delivery_partenar.css">
+</head>
+<body>
+    <header>
+        <h1>Give Delivery</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about as.html ">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="delivery.html">dealvery</a>
+            <a href="delivery-take.html">delivary take</a>
+            <a href="delivery_partenar.html">delivery_partenar form</a>
+        </nav>
+    </header>
+    <section class="delivery-partner-form">
+        <h2>Welcome to Work with Us!</h2>
+        <form onsubmit="registerDeliveryPartner(event)">
+            <label for="delivery-type">Delivery Type:</label>
+            <select id="delivery-type">
+                <option value="motorbike">Motorbike</option>
+                <option value="car">Car</option>
+            </select>
+            <label for="license">License for Driving/Riding:</label>
+            <input type="file" id="license" required>
+            <label for="partner-address">Address:</label>
+            <input type="text" id="partner-address" required>
+            <label for="phone-number">Phone Number:</label>
+            <input type="tel" id="phone-number" required>
+            <label for="working-hours">Working Hours per Day:</label>
+            <input type="number" id="working-hours" required>
+            <button type="submit">Register as Partner</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2023 Ashewa</p>
+    </footer>
+    <script src="assets/js/delivary partenar.js"></script>
+</body>
+</html>

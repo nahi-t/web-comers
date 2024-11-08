@@ -1,0 +1,116 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+/* Header Animation */
+header {
+    text-align: center;
+    margin: 20px 0;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Section Styling */
+section.sell-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    width: 100%;
+    margin-top: 20px;
+    animation: slideIn 1.5s ease;
+}
+
+/* Form Elements */
+.sell-form h2 {
+    font-size: 1.5em;
+    color: #5a9;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+    transition: color 0.3s;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="file"]:focus,
+select:focus {
+    outline: none;
+    border-color: #5a9;
+    box-shadow: 0 0 5px rgba(90, 169, 233, 0.5);
+}
+
+/* Submit Button Animation */
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: #5a9;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #488;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #777;
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

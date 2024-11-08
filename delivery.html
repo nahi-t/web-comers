@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Delivery Service</title>
+    <link rel="stylesheet" href="assets/css/delivary.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Quick Delivery Service</h1>
+        <p>Delivering items quickly and safely to your door!</p>
+    </header>
+
+    <main>
+        <form id="delivery-form">
+            <h2>Delivery Form</h2>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="address">Delivery Address:</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="item">Item Description:</label>
+            <input type="text" id="item" name="item" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" name="contact" required>
+
+            <button type="button" onclick="submitDelivery()">submit</button>
+            
+        </form>
+         <div id="confirmation" >
+            <h3>Thank you for your order!</h3>
+            <p>Your delivery details have been submitted.</p>
+            <p><a href="index.html">back to home page</a></p>
+        </div>
+    </main>
+
+    <script src="assets/js/delivery.js"></script>
+</body>
+</html>
